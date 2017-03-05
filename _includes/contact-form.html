@@ -1,0 +1,58 @@
+
+{% if include.success == "yes" %}
+<div class="alert alert-success">
+	<strong>
+		Спасибочки!
+	</strong>
+	Ну ваще спасибочки
+</div>
+{% endif %}
+
+Опсиание формы
+
+<form action="https://formspree.io/test@test.com" method="post">
+	<div class="form-container">
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="form-group ">
+					<label class="control-label" for="first_name">
+					Имя
+					<span>*</span></label>
+					<input class="form-control" id="first_name" name="first_name" value="" type="text" required>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="form-group ">
+					<label class="control-label" for="last_name">
+					Фамилия
+					<span>*</span></label>
+					<input class="form-control" id="last_name" name="last_name" value="" type="text" required>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group ">
+			<label class="control-label" for="email">Email<span>*</span></label>
+			<input class="form-control" id="email" name="email" value="" type="text" required>
+		</div>
+
+		<div class="form-group ">
+			<label class="control-label" for="message">
+				Сообщение
+			<span>*</span></label>
+			<textarea class="form-control" id="message" name="message" style="height: 200px;" required></textarea>
+		</div>
+	</div>
+
+	<input type="hidden" name="_next" value="{{ site.baseurl }}/contact-form-thank-you/" />
+	<input type="hidden" name="_subject" value="Contact Form Request" />
+	<input type="text" name="_gotcha" style="display:none" />
+
+	<div class="form-buttons">
+		<button type="submit" class="btn btn-primary">
+			<i class="fa fa-check"></i>
+				Отправить
+		</button>
+	</div>	
+</form>
+

@@ -1,0 +1,34 @@
+- title: Мой дзённік
+  children:
+    - title: Пра мяне
+      href: /pra_myane
+    - title: Галерэя
+      href: /galerehya
+    - title: Разважанні (блог)
+      href: /blog
+
+- title: Вучням
+  children:
+    - title: Матэрыялы па мове
+      href: /matehryyaly_pa_move
+    - title: Матэрыялы па літаратуры
+      href: /matehryyaly_pa_litaratury
+    - title: Алімпіядныя заданні
+      href: /alimpiyadnya_zadanny
+    - title: Тэсты
+      href: /tests
+    - title: Гульні
+      href: /games
+
+- title: Калегам
+  children:
+    - title: Метадычныя распрацоўкі
+      href: /metadychnya_raspracouki
+    - title: Пазакласныя мерапрыемствы
+      href: /pazaklasnya_merapryemstvy
+    - title: Дыдактычныя матэрыялы
+      href: /didaktychnya_materyaly
+    - title: Алімпіяды
+      href: /alimpiyady
+    - title: Спіс цікавых і палезных сайтаў
+      href: /links

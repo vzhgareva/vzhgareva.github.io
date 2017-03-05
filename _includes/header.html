@@ -1,0 +1,20 @@
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{% if page.title %}
+	<title>{{ page.title }} - {{ site.title }}</title>
+{% else %}
+	<title>{{ site.title }}</title>
+{% endif %}
+{% assign description = site.description %}
+{% if page.description %}{% assign description = page.description %}{% endif %}
+    <meta name="description" content="{{ description }}" />
+{% assign keywords = site.keywords %}
+{% if page.keywords %}{% assign keywords = page.keywords %}{% endif %}
+    <meta name="keywords" content="{{ keywords | join: "," }}" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=latin,cyrillic" type="text/css" media="all" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.css?bust={{ site.time | date: '%s' }}" type="text/css" media="all" />
+	<script src="{{ site.baseurl }}/assets/js/all.js?bust={{ site.time | date: '%s' }}"></script>
+
+</head>

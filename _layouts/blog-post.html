@@ -1,0 +1,22 @@
+---
+layout: blog
+---
+<div class="post type-post status-publish blog-article" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="entry-title" itemprop="headline">{{ page.title }}</h1>
+	<div class="blog-entry-meta">
+		Апублікавана {% include display_date.html date=page.date %}
+		<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}"/>
+	</div>
+
+	{% if page.image != null %}
+		<img itemprop="image" src="{{ site.baseurl }}{{ page.image }}" alt="{{ page.title }}" />
+		<br />
+	{% endif %}
+
+	<div class="entry-content" itemprop="articleBody">
+		{{ content }}
+	</div>
+
+</div>
+
+{% include disqus.html %}

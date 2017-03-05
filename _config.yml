@@ -1,0 +1,28 @@
+encoding: "bom|utf-8"
+title: Персанальная старонка Валянціны Жгаровай
+description: 'Персанальная старонка Валянціны Жгаровай'
+keywords:
+  - Website
+
+baseurl: ""
+
+sass:
+    style: :compressed
+
+compress_html:
+  ignore:
+    envs: [development]
+  blanklines: true
+
+excerpt_separator: <!--more-->
+
+exclude:
+  - _site
+  - .git
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-server.cmd
+
+permalink: /:title/
+
+gems:

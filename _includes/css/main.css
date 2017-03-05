@@ -1,0 +1,13 @@
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.homer-header-container{
+	background:#BFD6E6 url('{{ site.baseurl }}/assets/images/background.jpg') no-repeat center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}

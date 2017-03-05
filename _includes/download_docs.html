@@ -1,0 +1,11 @@
+{% assign data_documents = site.data.download.[include.category] %}
+
+{% for docoment_entry in data_documents %}
+<p>
+	<a href="{{ site.baseurl }}/downloads/{{ docoment_entry.file_name }}">
+		<strong>{{ docoment_entry.title }}</strong>
+	</a>
+	<br/>
+	{{ docoment_entry.description }}
+</p>
+{% endfor %}

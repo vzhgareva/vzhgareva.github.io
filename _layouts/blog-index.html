@@ -1,0 +1,35 @@
+---
+layout: blog
+---
+{% assign posts=site.posts %}
+{% for post in posts %}
+<div class="post type-post status-publish blog-article">
+	<h1 class="entry-title">
+		<a href="{{ site.baseurl }}{{ post.url }}">
+			{{ post.title }}
+		</a>
+	</h1>
+
+	<div class="blog-entry-meta">
+		Апублікавана {% include display_date.html date=post.date %}
+	</div>
+	<div class="entry-content">
+		{% if post.image != null %}
+			<a href="{{ site.baseurl }}{{ post.url }}">
+				<img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
+			</a>
+		<br />
+		{% endif %}
+		{% if post.content contains '<!--more-->' %}
+			{{ post.content | split:'<!--more-->' | first }}
+		{% else %}
+		 	<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+		{% endif %}
+		<a class="btn btn-default" href="{{ site.baseurl }}{{ post.url }}">
+			Чытаць далей
+			<span class="meta-nav">→</span>
+		</a>
+
+	</div>
+</div>
+{% endfor %}
