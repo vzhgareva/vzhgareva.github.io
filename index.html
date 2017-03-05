@@ -3,7 +3,112 @@ layout: home
 ---
 
 <div class="container">
-  <h1>Главная страница!</h1>
-  
-  <img src="{{ site.baseurl }}/assets/images/bel.png" />
+
+<div class="row">
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-8">
+		<h1>
+			<p class="text-center">
+				<small>Персанальная старонка</small> <br/> Валянціны Жгаровай
+			</p>
+		</h1>
+	</div>
+	<div class="col-md-1">
+	</div>
+</div>
+
+<br/>
+<br/>
+
+<div class="row">
+	<div class="col-md-1">
+	</div>
+
+	<div class="col-md-8">
+
+		<div class="row">
+
+			<div class="col-md-8">
+
+				<div class="row">
+					<a href="{{ site.baseurl }}/vuchnyam">
+						<div class="col-md-6">
+							<p class="text-center lead">
+								<img src="{{ site.baseurl }}/assets/images/2.png" width="150px" />
+								<br/>
+								Вучням
+							</p>
+						</div>
+					</a>
+					<a href="{{ site.baseurl }}/kalegam">
+						<div class="col-md-6">
+							<p class="text-center lead">
+								<img src="{{ site.baseurl }}/assets/images/1.png" width="150px" />
+								<br/>
+								Калегам
+							</p>
+						</div>
+					</a>
+				</div>
+
+				<div class="row" style="background-color: red;">
+					<a href="{{ site.baseurl }}/blog">
+						<div class="col-md-1">
+						</div>
+
+						<div class="col-md-10">
+							<p class="text-left lead">
+								<img src="{{ site.baseurl }}/assets/images/3.png" width="150px" />
+								Разважанні (блог)
+							</p>
+						</div>
+
+						<div class="col-md-1">
+						</div>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="col-md-4">
+				<p class="text-center">
+					<img src="{{ site.baseurl }}/assets/images/mama.jpg" class="img-circle" width="150px" />
+				</p>
+				<p class="text-uppercase lead">
+					Валянціна Жгарова
+				</p>
+				<small>
+					Настаўнік-метадыст па
+					беларускай мове і літаратуры. <br/><br/>
+
+					Працую у Камунараўская сярэдняй школе 23 гады.<br/>
+					За гэты час падрыхтавала 6 выпускаў,
+					дапамагла 15 вучням у падрыхтоўцы
+					да алімпіяд па беларускай мове.
+				</small>
+			</div>
+
+		</div>
+
+		<br/>
+		<br/>
+		<br/>
+
+		<div class="row">
+			<div class="col-md-12">
+				{% include_relative quotes.html %}
+			</div>
+		</div>
+
+	</div>
+
+	<div class="col-md-1">
+	</div>
+
+</div>
+
+
+
+
 </div>

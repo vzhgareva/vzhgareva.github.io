@@ -1,0 +1,44 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+
+  {% assign item_num = 0 %}
+
+	<ol class="carousel-indicators">
+		{% for quote_entry in site.data.quotes %}
+		    <li data-target="#myCarousel" data-slide-to="{{ item_num }}"
+		    {% if item_num == 0 %}
+		    	class="active"
+       		{% endif %}
+		    >
+		    </li>
+			{% assign item_num = item_num | plus: 1 %}
+		{% endfor %}
+  </ol>
+
+  {% assign item_active=true %}
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+	{% for quote_entry in site.data.quotes %}
+    <div class="item
+    	{% if item_active == true %}
+    		active
+    		{% assign item_active = false %}
+    	{% endif %}
+    	">
+		<strong>{{ quote_entry.text }}</strong>
+		<br/>
+		{{ quote_entry.author }}
+    </div>
+	{% endfor %}
+  </div>
+
+  <!-- Left and right controls -->
+  <!--
+	<a class="left carousel-control" href="#myCarousel"  role="button" data-slide="prev">
+		<img src="{{ site.baseurl }}/assets/images/cour-left.PNG" />
+	</a>
+	<a class="right carousel-control" href="#myCarousel"  role="button" data-slide="next">
+		<img src="{{ site.baseurl }}/assets/images/cour-right.PNG" />
+	</a>
+   -->
+</div>
