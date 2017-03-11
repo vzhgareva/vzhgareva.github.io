@@ -2,3 +2,50 @@
 layout: default
 title: Галерэя
 ---
+{% assign photo_num = 1 %}
+{% assign start_row = true %}
+{% assign end_row = false %}
+<div class="my-gallery">
+{% for file in site.static_files %}
+  {% if file.path contains "/photos/" %}
+
+	  {% if photo_num == 1 %}
+		{% assign start_row = true %}
+	  {% else %}
+		{% assign start_row = false %}
+	  {% endif %}
+
+	  {% if start_row == true %}
+		<div class="row">
+	  {% endif %}
+
+	   	<div class="col-md-4">
+		    <div class="thumbnail">
+		      <a href="{{ site.baseurl }}{{ file.path }}" data-lightbox="roadtrip">
+		        <img src="{{ site.baseurl }}{{ file.path }}" alt="" style="width:100%">
+		      </a>
+		    </div>
+	    </div>
+
+	  {% if photo_num == 3 %}
+		{% assign end_row = true %}
+	  {% else %}
+		{% assign end_row = false %}
+	  {% endif %}
+
+	  {% if end_row == true %}
+		</div>
+	  {% endif %}
+
+	  {% assign photo_num = photo_num | plus: 1 %}
+
+	  {% if photo_num == 4 %}
+		{% assign photo_num = 1 %}
+	  {% endif %}
+
+  {% endif %}
+{% endfor %}
+</div>
+
+<script src="{{ site.baseurl }}/assets/js/lightbox.min.js"></script>
+
