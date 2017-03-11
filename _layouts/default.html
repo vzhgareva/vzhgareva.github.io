@@ -9,7 +9,15 @@ layout: compress
 <body class="{{ page.bodyclass }}">
 
 <div class="container">
-{% include header_menu.html %}
+
+<div class="row">
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-10">
+		{% include header_menu.html %}
+	<div class="col-md-1">
+	</div>
+</div>
 
 <h1 class="page-transparend text-center page-title">
 	{% if page.page_title %}

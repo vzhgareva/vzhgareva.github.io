@@ -82,8 +82,9 @@ body {
 	padding: 15px;
 }
 
-.home-table-inner-block-blog a {
-    color: white;
+.home-table-inner-block a {
+    color: black;
+    font-size: 34px;
 }
 
 .qoute-text {
