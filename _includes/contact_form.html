@@ -1,91 +1,86 @@
-<div class="container">
-	<h1>Контакты</h1>
+<div class="row">
+	<div class="col-md-8">
 
-	<div class="row">
-		<div class="col-md-8">
+		{% if include.success == "yes" %}
+		<div class="alert alert-success">
+			<strong>
+				Спасибочки!
+			</strong>
+			Ну ваще спасибочки
+		</div>
+		{% endif %}
 
-			{% if include.success == "yes" %}
-			<div class="alert alert-success">
-				<strong>
-					Спасибочки!
-				</strong>
-				Ну ваще спасибочки
-			</div>
-			{% endif %}
-
-			<form action="https://formspree.io/zhgarevam69@gmail.com" method="post">
-				<div class="form-container">
-					<div class="row">
-						<div class="col-xs-6">
-							<div class="form-group ">
-								<label class="control-label" for="first_name">
-								Имя
-								<span>*</span></label>
-								<input class="form-control" id="first_name" name="first_name" value="" type="text" required>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<div class="form-group ">
-								<label class="control-label" for="last_name">
-								Фамилия
-								<span>*</span></label>
-								<input class="form-control" id="last_name" name="last_name" value="" type="text" required>
-							</div>
+		<form action="https://formspree.io/zhgarevam69@gmail.com" method="post">
+			<div class="form-container">
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group ">
+							<label class="control-label" for="first_name">
+							Имя
+							<span>*</span></label>
+							<input class="form-control" id="first_name" name="first_name" value="" type="text" required>
 						</div>
 					</div>
-
-					<div class="form-group ">
-						<label class="control-label" for="email">Email<span>*</span></label>
-						<input class="form-control" id="email" name="email" value="" type="text" required>
-					</div>
-
-					<div class="form-group ">
-						<label class="control-label" for="message">
-							Сообщение
-						<span>*</span></label>
-						<textarea class="form-control" id="message" name="message" style="height: 200px;" required></textarea>
+					<div class="col-xs-6">
+						<div class="form-group ">
+							<label class="control-label" for="last_name">
+							Фамилия
+							<span>*</span></label>
+							<input class="form-control" id="last_name" name="last_name" value="" type="text" required>
+						</div>
 					</div>
 				</div>
 
-				<input type="hidden" name="_next" value="{{ site.baseurl }}/contacts_thanks/" />
-				<input type="hidden" name="_subject" value="Contact Form Request" />
-				<input type="text" name="_gotcha" style="display:none" />
+				<div class="form-group ">
+					<label class="control-label" for="email">Email<span>*</span></label>
+					<input class="form-control" id="email" name="email" value="" type="text" required>
+				</div>
 
-				<div class="form-buttons">
-					<button type="submit" class="btn btn-primary">
-						<i class="fa fa-check"></i>
-							Отправить
-					</button>
-				</div>	
-			</form>
+				<div class="form-group ">
+					<label class="control-label" for="message">
+						Сообщение
+					<span>*</span></label>
+					<textarea class="form-control" id="message" name="message" style="height: 200px;" required></textarea>
+				</div>
+			</div>
 
-		</div>
-		<div class="col-md-4">
+			<input type="hidden" name="_next" value="{{ site.baseurl }}/contacts_thanks/" />
+			<input type="hidden" name="_subject" value="Contact Form Request" />
+			<input type="text" name="_gotcha" style="display:none" />
 
- 			Валянціна Мікалаеуна Жгарова
+			<div class="form-buttons">
+				<button type="submit" class="btn btn-default">
+					<i class="fa fa-check"></i>
+						Отправить
+				</button>
+			</div>	
+		</form>
 
-			<br/>
-			<br/>
-
-			<strong>Телефон:</strong>
-			<br/>
-			<i>
-				+375 29 8362852
-			</i>
-
-			<br/>
-			<br/>
-
-			<strong>Почтовый адрес:</strong>
-			<br/>
-
-			<i>
-				247382, Гомельская обл., Буда-Кошелевский р-н, аг. Коммунар, ул. Ленина, 34
-				<br/>
-				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ccfgw6cCub2b5P161G1Q30UDPHgiigRa&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-			</i>
-
-		</div>
 	</div>
+	<div class="col-md-4">
 
+		Валянціна Мікалаеуна Жгарова
+
+		<br/>
+		<br/>
+
+		<strong>Телефон:</strong>
+		<br/>
+		<i>
+			+375 29 8362852
+		</i>
+
+		<br/>
+		<br/>
+
+		<strong>Почтовый адрес:</strong>
+		<br/>
+
+		<i>
+			247382, Гомельская обл., Буда-Кошелевский р-н, аг. Коммунар, ул. Ленина, 34
+			<br/>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Ccfgw6cCub2b5P161G1Q30UDPHgiigRa&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+		</i>
+
+	</div>
 </div>

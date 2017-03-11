@@ -38,6 +38,11 @@ body {
     text-align: left;
 }
 
+.page-content .footer {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
 .footer .col-md-4 {
 	padding-left: 50px;
 }
@@ -58,8 +63,8 @@ body {
 
 .page-content {
     border: 1px solid red;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .page-white {
