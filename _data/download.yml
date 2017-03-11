@@ -3,6 +3,19 @@ alimpiyadnya_zadanny:
     description: 
     file_name: alimpiyady_5_klas.docx
 
+  - title: Алімпіядныя заданні па марфалогіі для вучняў 9 класа
+    description: 
+    file_name: alimpiyady_marfalogy_9_klas.pdf
+
+  - title: Алімпіядныя заданні па марфалогіі для вучняў 10 класа
+    description: 
+    file_name: alimpiyady_marfalogy_10_klas.pdf
+
+  - title: Алімпіядныя заданні па марфалогіі для вучняў 11 класа
+    description: 
+    file_name: alimpiyady_marfalogy_11_klas.pdf
+
+
 alimpiyady:
   - title: Арганізацыя стымулюючых заняткаў з вучнямі 9-11 класаў па падрыхтоўцы да алімпіяды
     description: Прапаноўваецца набор алімпіядных заданняў,якія накіраваны на выпрацоўку уменняў  і навыкаў комплекснага падыходу да рашэння адукацыйных задач, павышэнне культуралагічную кампетэнтнасць вучняў і развіццё іх умення вызначаць тэматыку і праблематыку твораў.
@@ -26,3 +39,6 @@ pazaklasnya_merapryemstvy:
     description: Літаратурна-музычная кампазіцыя, прысвечаная 135-годдзю з дня нараджэння Янкі Купалы
     file_name: svayta_da_dnya_naradzhgennya_kupaly.docx
 
+  - title: Каб  любіць  Беларусь  нашу  мілую
+    description: Гульня-падарожжа па станцыях накіравана на тое, каб актывізаваць мысленчую дзейнасць вучняў, садзейнічаць развіццю творчай актыўнасці вучняў, выхоўваць патрыятычныя пачуцці.
+    file_name: kab_lybit_belarus_nashu_miluy.docx
