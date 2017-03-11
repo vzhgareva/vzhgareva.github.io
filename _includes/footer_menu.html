@@ -1,14 +1,14 @@
 <div class="row">
-	<small>
 	{% for menu_entry in site.data.menu %}
 	<div class="col-md-4">
+		<small>
 		<strong>{{ menu_entry.title }}</strong>
 		<br/>
 	    {% for menu_child in menu_entry.children %}
 			<a href="{{ site.baseurl }}{{ menu_child.href }}">{{ menu_child.title }}</a>
 			<br/>
 	    {% endfor %}
+		</small>
 	</div>
 	{% endfor %}
-	</small>
 </div>

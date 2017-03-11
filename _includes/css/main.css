@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    text-align: justify;
     line-height: 1.6;
     padding-top: 20px;
     background-image: url({{ site.baseurl }}/assets/images/background.png);
@@ -39,8 +40,8 @@ body {
 }
 
 .page-content .footer {
-	margin-left: -15px;
-	margin-right: -15px;
+	margin-left: -25px;
+	margin-right: -25px;
 }
 
 .footer .col-md-4 {
@@ -63,8 +64,9 @@ body {
 
 .page-content {
     border: 1px solid red;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
 }
 
 .page-white {
@@ -106,3 +108,25 @@ body {
 	padding: 10px;
 }
 
+.contacts {
+    text-align: left;
+}
+
+.form-control:focus {
+  border-color: #FF0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.document-title {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.document-title a {
+    color: red;
+}
+
+.document-entry-info {
+	padding-left: 25px;
+}
