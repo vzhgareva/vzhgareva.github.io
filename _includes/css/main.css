@@ -88,10 +88,16 @@ body {
 }
 
 .home-table {
+	border-collapse: separate;
+	border-spacing: 7px 7px;
+	margin: -20px;
+}
+
+.home-table td {
+	border: 3px solid #ff0000;
 }
 
 .home-table-inner-block {
-    border: 3px solid red;
 	padding: 15px;
 }
 
@@ -153,4 +159,35 @@ body {
     color: gray;
     text-align: left;
     font-size: 12px;
+}
+
+.carousel-control {
+	opacity: 1;
+}
+
+
+.carousel-control.left {
+	background-image: url({{ site.baseurl }}/assets/images/cour-left.png);
+	background-repeat: no-repeat;
+	left: -103px;
+}
+
+.carousel-control.right {
+	background-image: url({{ site.baseurl }}/assets/images/cour-right.png);
+	background-repeat: no-repeat;
+	right: -133px;
+}
+
+.carousel {
+	height: 170px;
+}
+
+.newsletter-form {
+    width: 400px;
+    margin: 12px auto 0px;
+}
+
+.form-left-element {
+    position: absolute;
+    left: -5000px;
 }

@@ -2,22 +2,24 @@
 
 {% for docoment_entry in data_documents %}
 	<hr>
-	<div class="row">
-		<div class="col-md-1">
+	<div class="media">
+	  <div class="media-left">
+	    <a href="{{ site.baseurl }}/downloads/{{ docoment_entry.file_name }}">
 			<img src="{{ site.baseurl }}/assets/images/pdf-icon.png" width="64px">
+	    </a>
+	  </div>
+	  <div class="media-body">
+		<div class="document-title">
+			<a href="{{ site.baseurl }}/downloads/{{ docoment_entry.file_name }}">
+				{{ docoment_entry.title }}
+			</a>
 		</div>
-		<div class="col-md-11 document-entry-info">
-			<div class="document-title">
-				<a href="{{ site.baseurl }}/downloads/{{ docoment_entry.file_name }}">
-					{{ docoment_entry.title }}
-				</a>
-			</div>
-			<div class="document-description">
-				<small>
-					{{ docoment_entry.description }}
-				</small>
-			</div>
+		<div class="document-description">
+			<small>
+				{{ docoment_entry.description }}
+			</small>
 		</div>
+	  </div>
 	</div>
 	<br/>
 {% endfor %}
