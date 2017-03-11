@@ -16,7 +16,6 @@
   </ol>
 
   {% assign item_active=true %}
-  <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
 	{% for quote_entry in site.data.quotes %}
     <div class="item
@@ -25,9 +24,11 @@
     		{% assign item_active = false %}
     	{% endif %}
     	">
-		<strong>{{ quote_entry.text }}</strong>
+		{{ quote_entry.text }}
 		<br/>
-		{{ quote_entry.author }}
+		<div class="qoute-author">
+			{{ quote_entry.author }}
+	    </div>
     </div>
 	{% endfor %}
   </div>

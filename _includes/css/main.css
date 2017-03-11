@@ -1,13 +1,108 @@
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.6;
+    padding-top: 20px;
+    background-image: url({{ site.baseurl }}/assets/images/background.png);
+    background-position: 0 -70px;
 }
 
-.homer-header-container{
-	background:#BFD6E6 url('{{ site.baseurl }}/assets/images/background.jpg') no-repeat center center;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	background-size:cover
+.navbar {
+	background-color: red;
+	border-radius: 0px;
+	border-color: red;
+    color: white;
 }
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: black;
+    background-color: white;
+}
+
+.footer {
+    color: white;
+    background-color: red;
+	margin-top: -32px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+    text-align: left;
+}
+
+.page-content .footer {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.footer .col-md-4 {
+	padding-left: 50px;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer-copyright {
+	padding-right: 0px;
+	padding-bottom: 15px;
+}
+
+.page-title {
+    font-family: 'Lobster';
+    text-align: center;
+}
+
+.page-content {
+    border: 1px solid red;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.page-white {
+    background-color: white;
+}
+
+.page-red {
+    background-color: red;
+}
+
+.page-transparend {
+    background-color: transparent;
+}
+
+.home-table {
+}
+
+.home-table-inner-block {
+    border: 3px solid red;
+	padding: 15px;
+}
+
+.home-table-inner-block a {
+    color: black;
+    font-size: 34px;
+}
+
+.qoute-text {
+    font-family: 'Lobster';
+    text-align: right;
+    font-size: 28px;
+}
+
+.qoute-author {
+    color: gray;
+}
+
+.cellpadding {
+	padding: 10px;
+}
+

@@ -6,15 +6,64 @@ layout: compress
 
 {% include header.html %}
 
-<body class="{{ page.bodyclass }}" style="padding-top: 20px;">
-{% include header_menu.html %}
+<body class="{{ page.bodyclass }}">
 
-{{ content }}
+<div class="container">
+
+<div class="row">
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-10">
+		{% include header_menu.html %}
+	</div>
+	<div class="col-md-1">
+	</div>
+</div>
+
+<h1 class="page-transparend text-center page-title">
+	{% if page.page_title %}
+		{{ page.page_title }}
+	{% else if page.title %}
+		{{ page.title }}
+	{% endif %}
+</h1>
 
 <br/>
+
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8 page-white page-content">
+		{{ content }}
+
+		<br/>
+		<br/>
+
+		{% include footer.html %}
+	</div>
+	<div class="col-md-2">
+	</div>
+</div>
+
 <br/>
 
-{% include footer.html %}
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8 footer-copyright">
+		<small>
+			<p class="text-right">
+				&copy; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">Валянціна Жгарова</a>
+			</p>
+		</small>
+	</div>
+	<div class="col-md-2">
+	</div>
+</div>
+
+</div>
+
 {% include analytic.html %}
+
 </body>
 </html>
