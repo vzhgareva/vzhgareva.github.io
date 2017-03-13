@@ -2,24 +2,29 @@ alimpiyadnya_zadanny:
   - title: Алімпіядныя заданні па беларускай мове і літаратуры для вучняў 5 класа
     description: 
     file_name: alimpiyady_5_klas.docx
+    class: 5
 
   - title: Алімпіядныя заданні па марфалогіі для вучняў 9 класа
     description: 
     file_name: alimpiyady_marfalogy_9_klas.pdf
+    class: 9
 
   - title: Алімпіядныя заданні па марфалогіі для вучняў 10 класа
     description: 
     file_name: alimpiyady_marfalogy_10_klas.pdf
+    class: 10
 
   - title: Алімпіядныя заданні па марфалогіі для вучняў 11 класа
     description: 
     file_name: alimpiyady_marfalogy_11_klas.pdf
+    class: 11
 
 
 alimpiyady:
   - title: Арганізацыя стымулюючых заняткаў з вучнямі 9-11 класаў па падрыхтоўцы да алімпіяды
     description: Прапаноўваецца набор алімпіядных заданняў,якія накіраваны на выпрацоўку уменняў  і навыкаў комплекснага падыходу да рашэння адукацыйных задач, павышэнне культуралагічную кампетэнтнасць вучняў і развіццё іх умення вызначаць тэматыку і праблематыку твораў.
     file_name: padryhtovka_da_alimpiyady_9-10_klas.docx
+    class: 9+
 
 metadychnya_raspracouki:
   - title: Сістэма работы настаўніка па абагульненні, апісанні і прадстаўленні вопыту ўласнай педагагічнай дзейнасці

@@ -1,11 +1,12 @@
 {% assign data_documents = site.data.download.[include.category] %}
 
 {% for docoment_entry in data_documents %}
+
 	<hr>
 	<div class="media">
 	  <div class="media-left">
 	    <a href="{{ site.baseurl }}/downloads/{{ docoment_entry.file_name }}">
-			<img src="{{ site.baseurl }}/assets/images/pdf-icon.png" width="64px">
+	    	{% include download_file_icon.html file_name=docoment_entry.file_name class=docoment_entry.class %}
 	    </a>
 	  </div>
 	  <div class="media-body">

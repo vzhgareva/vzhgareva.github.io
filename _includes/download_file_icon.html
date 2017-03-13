@@ -1,0 +1,16 @@
+{% assign icon_filename = "unknown.png" %}
+
+{% if include.class %}
+	{% assign icon_filename = "class_" | append: include.class | append: ".png" %}
+{% else %}
+	{% if include.file_name contains ".doc" || include.file_name contains ".docx" %}
+		{% assign icon_filename = "doc.png" %}
+	{% else include.file_name contains ".ppt" || include.file_name contains ".pptx" %}
+		{% assign icon_filename = "ppt.png" %}
+	{% else include.file_name contains ".pdf" %}
+		{% assign icon_filename = "pdf.png" %}
+	{% endif %}
+{% endif %}
+
+<img src="{{ site.baseurl }}/assets/images/icons/{{ icon_filename }}" width="64px">
+
