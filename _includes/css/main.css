@@ -95,6 +95,7 @@ body {
 	padding-top: 25px;
 	padding-right: 25px;
 	padding-left: 25px;
+	min-width: 570px;
 }
 
 .page-white {
@@ -183,25 +184,31 @@ body {
     font-size: 12px;
 }
 
-.carousel-control {
-	opacity: 1;
+.carousel {
+	height: 150px;
 }
 
+.carousel-control {
+	opacity: 1;
+    width: 80px;
+}
+
+.carousel-indicators {
+	display: none;
+}
 
 .carousel-control.left {
 	background-image: url({{ site.baseurl }}/assets/images/cour-left.png);
-	background-repeat: no-repeat;
+	background-size: 78px 152px;
 	left: -103px;
+	background-repeat: no-repeat;
 }
 
 .carousel-control.right {
 	background-image: url({{ site.baseurl }}/assets/images/cour-right.png);
+	background-size: 73px 150px;
+	right: -108px;
 	background-repeat: no-repeat;
-	right: -133px;
-}
-
-.carousel {
-	height: 170px;
 }
 
 .newsletter-form {
