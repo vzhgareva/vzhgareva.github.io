@@ -13,8 +13,6 @@ sass:
     style: :compressed
 
 compress_html:
-  ignore:
-    envs: [development]
   blanklines: true
 
 excerpt_separator: <!--more-->

@@ -44,8 +44,15 @@ body {
     color: white;
 }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     color: white;
+    background-color: red;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -53,19 +60,29 @@ body {
     background-color: white;
 }
 
+.footer-top {
+	height: 30px;
+    background: url({{ site.baseurl }}/assets/images/foother_header.png) top center no-repeat;
+    background-color: transparent;
+	background-size: auto 60px;
+	background-position: center 2px;
+	margin-top: 40px;
+}
+
 .footer {
     color: white;
-    background-color: red;
-	margin-top: -32px;
 	padding-top: 30px;
 	padding-bottom: 15px;
     text-align: left;
+    background-color: red;
 }
+
 
 .page-content .footer {
 	margin-left: -25px;
 	margin-right: -25px;
 }
+
 
 .footer .col-md-4 {
 	padding-left: 50px;
@@ -95,7 +112,10 @@ body {
 	padding-top: 25px;
 	padding-right: 25px;
 	padding-left: 25px;
-	min-width: 570px;
+}
+
+.page-content-home {
+	min-width: 390px;
 }
 
 .page-white {
@@ -126,7 +146,7 @@ body {
 
 .home-table-inner-block a {
     color: black;
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .qoute-text {
@@ -219,7 +239,4 @@ body {
 .form-left-element {
     position: absolute;
     left: -5000px;
-}
-
-.my-gallery {
 }
