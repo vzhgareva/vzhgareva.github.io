@@ -2,7 +2,10 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="{{ site.baseurl }}/" style="padding-top: 5px;">
-      	<img alt="" src="{{ site.baseurl }}/assets/images/menu_icon.png" width="48px" height="42px" />&nbsp;Галоўная
+      	<img alt="" src="{{ site.baseurl }}/assets/images/menu_icon.png" width="48px" height="42px" />
+      	{% if page.layout != "home" %}
+	      	&nbsp;Галоўная
+      	{% endif %}
       </a>
     </div>
 
