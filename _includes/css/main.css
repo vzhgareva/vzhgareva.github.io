@@ -9,9 +9,9 @@ body {
 }
 
 .navbar {
-	background-color: red;
+	background-color: #D40203;
 	border-radius: 0px;
-	border-color: red;
+	border-color: #D40203;
     color: white;
     font-weight: bold;
 }
@@ -52,7 +52,7 @@ body {
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     color: white;
-    background-color: red;
+    background-color: #D40203;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -74,7 +74,7 @@ body {
 	padding-top: 30px;
 	padding-bottom: 15px;
     text-align: left;
-    background-color: red;
+    background-color: #D40203;
 }
 
 
@@ -95,11 +95,11 @@ body {
 .footer-copyright {
 	padding-right: 0px;
 	padding-bottom: 15px;
-    color: red;
+    color: #D40203;
 }
 
 .footer-copyright  a{
-    color: red;
+    color: #D40203;
 }
 
 .page-title {
@@ -108,7 +108,7 @@ body {
 }
 
 .page-content {
-    border: 1px solid red;
+    border: 1px solid #D40203;
 	padding-top: 25px;
 	padding-right: 25px;
 	padding-left: 25px;
@@ -119,7 +119,7 @@ body {
 }
 
 .page-red {
-    background-color: red;
+    background-color: #D40203;
 }
 
 .page-transparend {
@@ -175,7 +175,7 @@ body {
 }
 
 .document-title a {
-    color: red;
+    color: #D40203;
 }
 
 .document-entry-info {
