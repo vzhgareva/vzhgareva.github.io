@@ -9,9 +9,9 @@ body {
 }
 
 .navbar {
-	background-color: #D40203;
+	background-color: #EC0203;
 	border-radius: 0px;
-	border-color: #D40203;
+	border-color: #EC0203;
     color: white;
     font-weight: bold;
 }
@@ -52,7 +52,7 @@ body {
 
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
     color: white;
-    background-color: #D40203;
+    background-color: #EC0203;
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
@@ -74,7 +74,7 @@ body {
 	padding-top: 30px;
 	padding-bottom: 15px;
     text-align: left;
-    background-color: #D40203;
+    background-color: #EC0203;
 }
 
 
@@ -99,7 +99,7 @@ body {
 }
 
 .footer-copyright  a{
-    color: #D40203;
+    color: #EC0203;
 }
 
 .page-title {
@@ -108,7 +108,7 @@ body {
 }
 
 .page-content {
-    border: 1px solid #D40203;
+    border: 1px solid #EC0203;
 	padding-top: 25px;
 	padding-right: 25px;
 	padding-left: 25px;
@@ -119,7 +119,7 @@ body {
 }
 
 .page-red {
-    background-color: #D40203;
+    background-color: #EC0203;
 }
 
 .page-transparend {
@@ -175,7 +175,7 @@ body {
 }
 
 .document-title a {
-    color: #D40203;
+    color: #EC0203;
 }
 
 .document-entry-info {
