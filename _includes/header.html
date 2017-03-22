@@ -1,4 +1,6 @@
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 {% if page.title %}
 	<title>{{ page.title }} - {{ site.title }}</title>
@@ -11,13 +13,18 @@
 {% assign keywords = site.keywords %}
 {% if page.keywords %}{% assign keywords = page.keywords %}{% endif %}
     <meta name="keywords" content="{{ keywords | join: "," }}" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css" media="all" />
+	<link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css" media="all" /> 
+
 	<link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=latin,cyrillic" type="text/css" media="all" /> -->
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/all.css?bust={{ site.time | date: '%s' }}" type="text/css" media="all" />
 	<script src="{{ site.baseurl }}/assets/js/all.js?bust={{ site.time | date: '%s' }}"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
