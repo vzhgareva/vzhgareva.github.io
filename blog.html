@@ -2,3 +2,57 @@
 layout: blog-index
 title: Разважанні
 ---
+<div class="panel panel-warning">
+	<div class="panel-heading">Падпіска на навіны</div>
+	<div class="panel-body">
+
+		<form class="newsletter-form" action="//github.us15.list-manage.com/subscribe/post?u=a86b248a91e541e6a3cdbc059&amp;id=be747d28ac" method="post" target="_blank" id="blog-mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"> 
+			<div class="input-group"> 
+				<input name="EMAIL" id="blog-mce-EMAIL" class="form-control" placeholder="Напішыце email-адрас" required="" type="email"> 
+				<input name="SOURCE" id="blog-SOURCE" value="Блог Валянціны Жгаровай" type="hidden"> 
+				<div class="form-left-element">
+					<input name="b_a86b248a91e541e6a3cdbc059_be747d28ac" tabindex="-1" value="" type="text">
+				</div>
+				<span class="input-group-btn"> 
+					<button class="btn btn-default" type="submit" data-dismiss="moddal"> Падпісацца </button> 
+				</span> 
+			</div>
+		</form>
+
+	</div>
+</div>
+
+<hr>
+<br/>
+
+{% for post in site.posts %}
+<div class="post type-post status-publish blog-article">
+	<h1 class="entry-title">
+		<a href="{{ site.baseurl }}{{ post.url }}">
+			{{ post.title }}
+		</a>
+	</h1>
+
+	<div class="blog-entry-meta-index">
+		Апублікавана {% include display_date.html date=post.date %}
+	</div>
+	<div class="entry-content">
+		{% if post.image != null %}
+			<a href="{{ site.baseurl }}{{ post.url }}">
+				<img class="img-responsive" src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}" />
+			</a>
+		<br />
+		{% endif %}
+		{% if post.content contains '<!--more-->' %}
+			{{ post.content | split:'<!--more-->' | first }}
+		{% else %}
+		 	<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+		{% endif %}
+		<a class="btn btn-default" href="{{ site.baseurl }}{{ post.url }}">
+			Чытаць далей
+			<span class="meta-nav">→</span>
+		</a>
+
+	</div>
+</div>
+{% endfor %}
